@@ -36,16 +36,16 @@ class ViewController: UIViewController {
         view2.centerX -= 100
         view2.layer.backgroundColor = UIColor.redColor().CGColor
         
-        line.height = 100*sqrt(2)
-        line.width = 1
+        line.height = 8000*sqrt(2)
+        line.width = 2
         line.layer.backgroundColor = UIColor.redColor().CGColor
         line.center = view1.center
         line.bottom = view1.top
         line.setAnchorPoint(CGPoint(x: 0, y: 1))
         line.layer.transform = CATransform3DMakeRotation(45.radian, 1, 0, 0)
         
-        line2.height = 100*sqrt(2)
-        line2.width = 1
+        line2.height = 8000*sqrt(2)
+        line2.width = 4
         line2.layer.backgroundColor = UIColor.redColor().CGColor
         line2.center = view2.center
         line2.bottom = view2.top
