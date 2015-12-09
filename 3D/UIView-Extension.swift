@@ -54,4 +54,10 @@ extension UIView{
         set { self.frame.size = newValue }
         get { return self.frame.size }
     }
+    
+    func setAnchorPoint(point:CGPoint){
+        let oldframe = self.frame
+        self.layer.anchorPoint = point
+        self.frame = oldframe
+    }
 }
